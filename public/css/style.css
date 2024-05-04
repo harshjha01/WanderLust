@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.navbaricon{
+  margin-left: 10px;
+}
+.f-info-social,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-social i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  opacity: 0.8;
+}
+.f-info-social i:hover {
+  font-size: 1.5rem;
+  opacity: 1;
+  cursor: pointer;
+}
+.f-info {
+  text-align: center;
+  height: 5rem;
+  background-color: rgb(171, 171, 171);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+/* cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.listing-link {
+  text-decoration: none;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+/* .btn {
+  border: none !important;
+} */
+.no-border {
+  border: none !important;
+}
+
+.show-img {
+  height: 30vh;
+}
+/* Map */
+#map {
+  height: 400px;
+  width: 80vh;
+}
