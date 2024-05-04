@@ -1,31 +1,38 @@
 <nav
-  class="navbar navbar-expand-md navbar-light bg-light border-bottom sticky-top"
+  class="navbar navbar-expand-sm navbar-light bg-light border-bottom sticky-top"
 >
-  <a class="navbar-brand navbaricon" href="/listings"><i class="fa-solid fa-globe"></i></a>
+  <a class="navbar-brand navbaricon" href="/listings"
+    ><i class="fa-solid fa-globe"></i
+  ></a>
   <button
     class="navbar-toggler"
     type="button"
     data-toggle="collapse"
-    data-target="#navbarNav"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="/listings">All Listings</a>
+        
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/listings/new">Add new Listing</a>
       </li>
     </ul>
-  </div>
-  <div class="navbar-nav ms-auto">
-    <% if (!currUser) {%>
-    <a class="nav-link" href="/signup">Signup</a>
-    <a href="/login" class="nav-link">Login</a>
-    <% } %> <% if (currUser) {%>
-    <a class="nav-link" href="/logout">Logout</a>
-    <% } %>
+
+    <div class="navbar-nav ms-auto">
+      <% if (!currUser) {%>
+      <a class="nav-link" href="/signup">Signup</a>
+      <a href="/login" class="nav-link">Login</a>
+      <% } %> <% if (currUser) {%>
+      <a class="nav-link" href="/logout">Logout</a>
+      <% } %>
+    </div>
   </div>
 </nav>
